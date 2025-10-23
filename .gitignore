@@ -31,3 +31,5 @@ dist/
 !.gitignore
 !.gitattributes
 !.git
+
+*.db
