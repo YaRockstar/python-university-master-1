@@ -1,5 +1,6 @@
 def show_menu():
-    print("\n===== Калькулятор =====")
+    """Показ меню в консоли"""
+    print("\n===== Прогамма 'Калькулятор' =====")
     print("1. Сложение")
     print("2. Вычитание")
     print("3. Умножение")
@@ -36,22 +37,22 @@ def main():
                 a, b = get_numbers()
                 result = a + b
                 record = f"{a} + {b} = {result}"
-                print(record)
                 history.append(record)
+                print(record)
 
             elif choice == "2":
                 a, b = get_numbers()
                 result = a - b
                 record = f"{a} - {b} = {result}"
-                print(record)
                 history.append(record)
+                print(record)
 
             elif choice == "3":
                 a, b = get_numbers()
                 result = a * b
                 record = f"{a} * {b} = {result}"
-                print(record)
                 history.append(record)
+                print(record)
 
             elif choice == "4":
                 a, b = get_numbers()
@@ -60,15 +61,15 @@ def main():
                     record = f"{a} / {b} = {result}"
                 except ZeroDivisionError:
                     record = f"Ошибка: деление {a} / {b} на ноль!"
-                print(record)
                 history.append(record)
+                print(record)
 
             elif choice == "5":
                 a, b = get_numbers()
                 result = a ** b
                 record = f"{a} ^ {b} = {result}"
-                print(record)
                 history.append(record)
+                print(record)
 
             elif choice == "6":
                 a, b = get_numbers()
@@ -77,8 +78,8 @@ def main():
                     record = f"{a} % {b} = {result}"
                 except ZeroDivisionError:
                     record = f"Ошибка: остаток от деления {a} % {b} на ноль!"
-                print(record)
                 history.append(record)
+                print(record)
 
             elif choice == "7":
                 a, b = get_numbers()
@@ -87,8 +88,8 @@ def main():
                     record = f"{a} // {b} = {result}"
                 except ZeroDivisionError:
                     record = f"Ошибка: целочисленное деление {a} // {b} на ноль!"
-                print(record)
                 history.append(record)
+                print(record)
 
             elif choice == "8":
                 if history:
@@ -96,11 +97,11 @@ def main():
                     for h in history:
                         print(h)
                 else:
-                    print("История пуста.")
+                    print("История пуста")
 
             elif choice == "9":
                 history.clear()
-                print("История очищена.")
+                print("История очищена")
 
             elif choice == "0":
                 print("Выход из программы...")
@@ -110,7 +111,7 @@ def main():
                 print("Ошибка: нет такого пункта меню!")
 
     except KeyboardInterrupt:
-        print("\nВы нажали Ctrl+C. Программа завершена корректно.")
+        print("\nПрограмма завершена корректно")
 
 
 if __name__ == "__main__":
