@@ -33,3 +33,5 @@ dist/
 !.git
 
 *.db
+*.json
+*.csv
